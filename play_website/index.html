@@ -2,21 +2,97 @@
 
 <head>
     <title>Wii modding.</title>
+
+    <style>
+        p {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        h1 {
+            text-shadow: 2px 2px;
+        }
+
+        h1 {
+            transform: rotate(180deg);
+            text-align: center;
+        }
+
+        .red {
+            color: crimson;
+        }
+
+        #logo {
+            width: 400px;
+            height: auto;
+            border-left: 10px solid red;
+            border-bottom: 10px solid blue;
+            border-radius: 50px;
+            opacity: 0.5;
+        }
+
+        #logo:hover {
+            opacity: 1.0;
+        }
+
+        .dead {
+            border-style: dotted;
+            color: blueviolet
+        }
+
+        .ptsd {
+            width: 400px;
+            height: auto;
+            border-left: 20px solid blue;
+            border-right: 20px solid red;
+            border-top: 20px solid violet;
+            border-bottom: 20px solid green;
+            border-radius: 50px;
+            opacity: 0.3;
+        }
+
+        .ptsd:hover {
+            opacity: 1.0;
+        }
+
+        .please {
+            border-style: inset;
+            color: royalblue;
+            font-family: 'Gill Sans';
+            transform: rotate(3deg);
+            border-color: aqua;
+        }
+
+        .help {
+            opacity: 0.2;
+            border-radius: inset;
+        }
+
+        .help:hover {
+            opacity: 1.0;
+        }
+
+        .red {
+            border-style: dashed
+        }
+    </style>
 </head>
 
 <body>
     <h1>A small guide on how to mod a Wii</h1>
-    <p>Wiis are a dead console. Console support, sales and online services were dropped somewhere around 2013, and since
+    <p class="red">Wiis are a dead console. Console support, sales and online services
+        were dropped somewhere
+        around 2013, and since
         then, people have been focused on nintendo's many other copious amounts of consoles. However, a small amount of
         dedicated people have been morking hard to keep it alive. Through these efforts, new apps have been created,
         games and utilites that allow you to use a wii in different ways, such as using it as a web server.
     </p>
-    <img
+    <img class="ptsd"
         src="data:image/jpeg;base64,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" />
     <blockquote>An image showing BootMii.</blockquote>
     <h2>Modifying the Wii</h2>
-    <p>The equipment you will need in order to modify your wii is an
-    <ul>
+    <p class="equip">The equipment you will need in order to modify your wii is an
+    <ul class="please">
         <dl>
             <li>SD card,</li>
             <li>a wii (obviously)</li>
@@ -28,7 +104,10 @@
         </dl>
     </ul>
     </p>
-    <p>Alright, the first thing you want to do is go grab your MAC address for it. It is located in your console
+
+
+    <p class="dead">Alright, the first thing you want to do is go grab your MAC address for it. It is located in your
+        console
         information, a catagory gotten from the Internet category. Memorise it or photo it and progress to <a
             href="https://wilbrand.donut.eu.org/">https://wilbrand.donut.eu.org/</a> On the website, type your MAC
         address
@@ -40,7 +119,7 @@
     </p>
     <p> If you see this image, you should be doing everything right. You are also almost done with modding your console.
     </p>
-    <img src=https://wii.hacks.guide/images/hackmii/scam.png>
+    <img id="logo" src=https://wii.hacks.guide/images/hackmii/scam.png>
     <br />
     <h1> Finishing the installation and suggestions of other applications</h1>
     <p> After a few seconds, you should be given a prompt to continue. Press 1, and you should be in this sort of
@@ -49,7 +128,8 @@
         HackMii. Once you've done that, you have modded your Wii, and you can safely exit. The homebrew menu should be
         on your Wii menu now. </p>
     <br />
-    <blockquote>All info taken from the website <a href="https://wii.hacks.guide/">wii.hacks.guide.</a> This website
+    <blockquote class="red">All info taken from the website <a href="https://wii.hacks.guide/">wii.hacks.guide.</a> This
+        website
         contains a lot more info than this one,
         and also informs people about brick protection, applications that can be installed, and userfriendly options.
     </blockquote>
@@ -66,7 +146,7 @@
 
     </ul>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/AOUKrpe4Q-o?si=oHcwznoKOGyviC4z"
+    <iframe class="help" width="560" height="315" src="https://www.youtube.com/embed/AOUKrpe4Q-o?si=oHcwznoKOGyviC4z"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
